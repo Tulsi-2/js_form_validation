@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    background-color: rgba(116, 193, 218, 0.474);
+    
+}
+input{
+    width: 250px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+button{
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+    background:rgba(116, 193, 218, 0.474);
+   
+}
+button:hover{
+    background-color: rgb(7, 179, 7);
+}
+.userDetail{
+    text-align: center;
+    border: 4px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    background: #fff;
+}
