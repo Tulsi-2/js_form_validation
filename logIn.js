@@ -10,9 +10,9 @@ function login(){
         if(email== item.email && pass == item.password){
             window.location.assign("dashboard.html")
         }
-        else{
-            alert("wrong credentials")
-        }
+        // else{
+        //     alert("wrong credentials")
+        // }
 
     })
 }

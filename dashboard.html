@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Hii , Welcome To My site</h1>
+<body style="background-color: rgb(224, 159, 91);">
+    <p style="text-align: center; font-size: 50px ;margin-top:250px ;" ><u></u></p>
+
+
     
     <script>
+        
+        let parseuser = JSON.parse(localStorage.getItem('arr'))
+        let para = document.querySelector('u')
+        parseuser.map((index)=>{
+            if(index.email = index.user_name){
+                para.innerText =`Hello  ${index.user_name},  Welcome To My Site`
+                
+            }
+
+        })
+
 
     </script>
 </body>

@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: rgb(187, 126, 245);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @keyframes example {
+            0% {
+                background-color: rgb(107, 195, 221);
+            }
+
+            25% {
+                background-color: rgb(228, 127, 199) ;
+            }
+
+            50% {
+                background-color: rgb(120, 120, 228);
+            }
+
+            100% {
+                background-color:rgb(223, 223, 132);
+            }
         }
-        div{
+
+        /* The element to apply the animation to */
+        body {
+            background-color:plum ;
+            animation-name: example;
+            animation-duration: 5s;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 900;
+            font-size: 60px;
+        }
+
+        div {
             border: 4px solid black;
+            width: 350px;
+            height: 350px;
             text-align: center;
             padding: 10px;
-            margin-top: 150px;
+            top: 40%;
+            left: 10%;
             background: #fff;
         }
-        input{
-            width: 200px;
+
+        input {
+            width: 250px;
             margin: 10px 0px;
             padding: 10px;
         }
-        button{
-            width: 140px;
-            border-radius: 5px;
-            background: rgb(187, 126, 245);
+
+        button {
+            width: 230px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgb(149, 89, 204);
+            color: #fff;
         }
-        button:hover{
-    background-color: rgb(7, 179, 7);
-}
+
+        button:hover {
+            background-color: rgb(185, 148, 221);
+        }
     </style>
 </head>
+
 <body>
+    <h2>LogIn To Our Website</h2>
     <div class="login">
         <h1>Enter Your Credentials !</h1>
         <input type="email" placeholder="Email_Id" id="email"><br><br>
@@ -42,4 +78,5 @@
     </div>
     <script src="logIn.js"></script>
 </body>
+
 </html>

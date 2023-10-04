@@ -14,11 +14,22 @@ a
 {
     text-decoration: none;
     display: inline-block;
-}
-body{
-    background-color: rgba(116, 193, 218, 0.474);
-    
-}
+} 
+body, html {
+    height: 100%;
+  }
+.bg-image {
+    /* The image used */
+    background-image: url("img/img1.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 input{
     width: 250px;
     margin: 10px 0px;
@@ -28,20 +39,29 @@ button{
     width: 240px;
     height: 30px;
     border-radius: 5px;
-    background:rgba(116, 193, 218, 0.474);
+    color: #fff;
+    background: navy;
    
 }
 button:hover{
-    background-color: rgb(7, 179, 7);
+    background-color:rgba(68, 68, 193, 0.919);
 }
 .userDetail{
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  
+}
+.user{
+    
     text-align: center;
-    border: 4px solid black;
+    border: 4px solid navy;
+    border-radius: 10px;
     width: 400px;
     height: 400px;
-    margin: auto;
+   background-color: rgb(191, 191, 236)!important;
     padding: 10px;
-    padding: 10px;
-    margin-top: 50px;
     background: #fff;
 }
