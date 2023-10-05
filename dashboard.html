@@ -13,16 +13,26 @@
     <script>
         
         let parseuser = JSON.parse(localStorage.getItem('arr'))
+        let parseEmail = JSON.parse(localStorage.getItem('ary'))
         let para = document.querySelector('u')
-        parseuser.map((index)=>{
-            if(index.email = index.user_name){
-                para.innerText =`Hello  ${index.user_name},  Welcome To My Site`
-                
-            }
+        console.log(parseEmail)
+        parseEmail.map((i)=>{
+            const parseee =i.email
+            console.log(parseee)
+            parseuser.map((e)=>{
+            const par = e.email
+            console.log(par)
 
+            // const uname = e.user_name
+            // console.log(uname)
+            
+            if(parseee === par){
+            para.innerText =`Hello  ${e.user_name},  Welcome To My Site`
+        }
         })
-
-
+            
+        })
+       
     </script>
 </body>
 </html>
